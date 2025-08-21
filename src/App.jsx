@@ -147,7 +147,7 @@ const skills = {
 };
 export const projects = [
   {
-    cover: "/images/KVOLT-SITE.png",
+    cover: `${import.meta.env.BASE_URL}images/KVOLT-SITE.png`,
     title: "Kvolt Energia",
     year: "2025",
     stack: ["WordPress", "Elementor", "Responsivo", "UX", "SEO"],
@@ -157,7 +157,7 @@ export const projects = [
   link: "https://kvolt.com.br/" 
   },
  {
-  cover: "/images/AURORA-SITE.png",
+  cover: `${import.meta.env.BASE_URL}images/AURORA-SITE.png`,
   title: "Aurora Soluções Ambientais",
   year: "2025",
   stack: ["WordPress", "Elementor", "Performance", "SEO", "Identidade Visual"],
@@ -171,7 +171,7 @@ export const projects = [
   link: "https://aurorasolucoesambientais.com.br/" 
 },
   {
-    cover: "/images/PIANGERS-SITE.png",
+    cover: `${import.meta.env.BASE_URL}images/PIANGERS-SITE.png`,
     title: "Piangers Engenharia",
     year: "2024",
     stack: ["WordPress", "Elementor", "Performance", "Acessibilidade"],
@@ -181,7 +181,7 @@ export const projects = [
   link: "https://piangers.eng.br/" 
   },
   {
-    cover: "/images/CAPA-LOGO.png",
+    cover: `${import.meta.env.BASE_URL}images/CAPA-LOGO.png`,
     title: "Criação de Logos e Paletas",
     year: "2024",
     stack: ["React", "UI/UX", "Responsivo"],
@@ -190,7 +190,7 @@ export const projects = [
     outcomes: ["Guia visual coeso", "Aplicações consistentes em mídias", "Melhor reconhecimento de marca"]
   },
   {
-    cover: "/images/CAPA-VIDEO.png",
+    cover: `${import.meta.env.BASE_URL}images/CAPA-VIDEO.png`,
     title: "Vídeo Institucional Empresarial",
     year: "2025",
     stack: ["Produção Audiovisual", "Tailwind", "Vite"],
@@ -199,7 +199,7 @@ export const projects = [
     outcomes: ["Tempo de navegação maior", "Apresentação clara de cases", "Captação via CTA"]
   },
   {
-    cover: "/images/CAPA-REDSIGN.png",
+    cover: `${import.meta.env.BASE_URL}images/CAPA-REDSIGN.png`,
     title: "Redesign de Instagram",
     year: "2024",
     stack: ["WordPress", "Copy", "Pixel/Analytics"],
@@ -208,7 +208,7 @@ export const projects = [
     outcomes: ["Feed consistente", "CTA claro", "Mensuração via Pixel/Analytics"]
   },
   {
-    cover: "/images/CAPA-CRIACAOPOSTS.png",
+    cover: `${import.meta.env.BASE_URL}images/CAPA-CRIACAOPOSTS.png`,
     title: "Criação de Posts para Redes Sociais",
     year: "2024",
     stack: ["WordPress", "Copy", "Pixel/Analytics"],
@@ -217,7 +217,7 @@ export const projects = [
     outcomes: ["Calendário editorial", "Aumento de engajamento", "Mensuração por métricas"]
   },
   {
-    cover: "/images/LINKTREE-CAPA.png",
+    cover: `${import.meta.env.BASE_URL}images/LINKTREE-CAPA.png`,
     title: "Linktree Personalizado",
     year: "2024",
     stack: ["WordPress", "Copy", "Pixel/Analytics"],
@@ -226,7 +226,7 @@ export const projects = [
     outcomes: ["Mais cliques em canais chave", "Melhor UX mobile", "Rastreamento de links"]
   },
   {
-    cover: "/images/CAPA-IDENTIDADEVISUAL.png",
+    cover: `${import.meta.env.BASE_URL}images/CAPA-IDENTIDADEVISUAL.png`,
     title: "Identidade Visual",
     year: "2024",
     stack: ["WordPress", "Branding"],
@@ -406,16 +406,12 @@ export default function App() {
                 <a href="#contato" className="rounded-xl px-5 py-3 border border-gray-300 hover:border-black">Pedir orçamento</a>
               </div>
               <div className="grid grid-cols-3 md:grid-cols-6 gap-3 mt-6">
-                <Metric label="PageSpeed (meta)" value="85+" />
-                <Metric label="LCP (4G)" value="< 2.5s" />
-                <Metric label="CLS" value="< 0.1" />
-              </div>
+  <Metric label="Projetos entregues" value="15+" />
+  <Metric label="Clientes satisfeitos" value="10+" />
+  <Metric label="Tempo de experiência" value="2 anos" />
+</div>
             </div>
-            <div className="md:pl-8">
-              <div className="rounded-3xl overflow-hidden border border-gray-200 shadow-lg bg-white">
-                <img src="https://picsum.photos/seed/site-showcase/1200/800" alt="Showcase de sites" className="w-full h-auto object-cover" />
-              </div>
-            </div>
+          
           </div>
         </Container>
       </section>

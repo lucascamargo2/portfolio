@@ -1,16 +1,18 @@
 
 {
-  "homepage": "https://lucascamargo2.github.io/seu-repositorio",
+  
+  "homepage": "https://lucascamargo2.github.io/portfolio",
   "name": "portfolio-lucas",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "dependencies": {
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
