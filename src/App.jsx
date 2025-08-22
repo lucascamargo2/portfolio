@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useForm, ValidationError } from '@formspree/react';
 
 // ==========================================================
 // PORTFÓLIO – LUCAS (React + Tailwind)
@@ -573,17 +574,6 @@ function ContactForm() {
     setTimeout(() => setStatus("sent"), 800); // simulação
   }
 
-  return (
-    <form onSubmit={handleSubmit} className="mt-8 grid md:grid-cols-2 gap-4 max-w-3xl">
-      <input name="name" value={form.name} onChange={handleChange} className="border border-gray-300 rounded-xl px-4 py-3" placeholder="Seu nome" required />
-      <input name="email" value={form.email} onChange={handleChange} type="email" className="border border-gray-300 rounded-xl px-4 py-3" placeholder="Seu e-mail" required />
-      <input name="site" value={form.site} onChange={handleChange} className="md:col-span-2 border border-gray-300 rounded-xl px-4 py-3" placeholder="Site atual (se tiver)" />
-      <textarea name="message" value={form.message} onChange={handleChange} className="md:col-span-2 border border-gray-300 rounded-xl px-4 py-3 min-h-[120px]" placeholder="Descreva o projeto (objetivo, prazo, páginas, referências)" required />
-      <div className="md:col-span-2 flex gap-3 items-center">
-        <button type="submit" disabled={status!=="idle"} className="rounded-xl px-5 py-3 bg-black text-white hover:opacity-90 disabled:opacity-60">{status==="idle"?"Enviar":"Enviando..."}</button>
-        <a href="https://wa.me/55XXXXXXXXXXX" className="rounded-xl px-5 py-3 border border-gray-300 hover:border-black">WhatsApp</a>
-        {status === "sent" && <span className="text-sm text-green-600">Mensagem enviada! (simulação)</span>}
-      </div>
-    </form>
-  );
+
+
 }
